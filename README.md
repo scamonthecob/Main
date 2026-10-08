@@ -40,7 +40,7 @@ For a skin or another prize without a known cash value, use `"prize": {"amount":
 
 ### Payment status
 
-Use `unknown`, `winner_reports_unpaid`, `winner_reports_paid` or `payment_evidence_reviewed`. A reviewed announcement says who won, not whether money was sent. Preserve corrections in the record’s dated `history`. Never mark every old or unclaimed prize unpaid.
+Use `unknown`, `winner_reports_unpaid`, `winner_reports_paid`, `payment_evidence_reviewed` or `winner_reports_accepted_subs`. A reviewed announcement says who won, not whether money was sent. Preserve corrections in the record’s dated `history`. Never mark every old or unclaimed prize unpaid.
 
 The homepage reads all records in the data file. Its initial HTML row and counts are a no-JavaScript snapshot; refresh that snapshot if you need it to reflect new records for visitors without JavaScript.
 
@@ -48,7 +48,7 @@ The homepage reads all records in the data file. Its initial HTML row and counts
 
 Add sourced complaints to `cases.html` with the corresponding winner record ID. Keep actual messages, payment reports, source dates, the channel owner’s response and corrections together. If COB-001 is paid, update its JSON payment history **and** its separate case text. Keep the resolved winner in the archive.
 
-The one supplied case is still a claimant report. Original screenshots and review of VOD `2889810819` at `04:38:43` are still needed. The exact win date is unconfirmed. Earlier prizes were paid.
+The one supplied case is still a claimant report. COB-001 is dated 2 Oct 2026 on VOD `2889810819` at `04:38:45`. Original Whisper screenshots are still needed.
 
 ## Evidence and future collection
 

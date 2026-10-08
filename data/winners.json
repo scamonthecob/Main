@@ -5,19 +5,259 @@
     {
       "id": "COB-001",
       "winner": "ImJaoBao",
-      "winDate": null,
-      "dateNote": "Exact calendar date of the raffle is unconfirmed.",
+      "winDate": "2026-10-02",
+      "dateNote": "Date taken from the maintainer’s 6-days-ago note on 8 Oct 2026, matching the Friday Party VOD.",
       "prize": {"amount": 10, "currency": "USD", "kind": "Raffle"},
       "vodId": "2889810819",
-      "timestampSeconds": 16723,
-      "announcementStatus": "needs_review",
+      "timestampSeconds": 16725,
+      "announcementStatus": "reviewed",
       "paymentStatus": "winner_reports_unpaid",
       "paymentCheckedAt": "2026-10-08",
       "sourceType": "claimant_report",
       "evidenceLinks": [],
-      "notes": "Winner supplied the VOD and timestamp. Original screenshots and a review of the announcement are still needed. Earlier prizes were paid; only this $10 is reported outstanding. The final supplied message excludes the viewer from the community but does not explicitly cancel this payment.",
+      "notes": "Streamlabs: @ImJaoBao has won a $10 Prize Money! Claimant reports this cash remains unpaid. Earlier prizes were paid. The final supplied message excludes the viewer from the community but does not explicitly cancel this payment.",
       "history": [
-        {"date": "2026-10-08", "event": "Record created from the claimant's account; claimant reports payment remains outstanding."}
+        {"date": "2026-10-08", "event": "Record created from the claimant's account; claimant reports payment remains outstanding."},
+        {"date": "2026-10-08", "event": "Win date set to 2026-10-02 from VOD 2889810819; Streamlabs announcement timestamp set to 04:38:45."}
+      ]
+    },
+    {
+      "id": "COB-002",
+      "winner": "mikedag262",
+      "winDate": "2026-10-08",
+      "dateNote": "Maintainer recorded this as today’s raffle on 8 Oct 2026.",
+      "prize": {"amount": 10, "currency": "USD", "kind": "Raffle"},
+      "vodId": "2895167066",
+      "timestampSeconds": 18975,
+      "announcementStatus": "reviewed",
+      "paymentStatus": "unknown",
+      "paymentCheckedAt": null,
+      "sourceType": "manual_vod_review",
+      "evidenceLinks": [],
+      "notes": "Streamlabs: @mikedag262 has won a $10 Prize Money!",
+      "history": [
+        {"date": "2026-10-08", "event": "Recorded from Streamlabs raffle announcement on VOD 2895167066 at 05:16:15."}
+      ]
+    },
+    {
+      "id": "COB-003",
+      "winner": "kraftmade",
+      "winDate": "2026-10-05",
+      "dateNote": "Date taken from the maintainer’s 3-days-ago note on 8 Oct 2026.",
+      "prize": {"amount": 10, "currency": "USD", "kind": "Raffle"},
+      "vodId": "2892588578",
+      "timestampSeconds": 16560,
+      "announcementStatus": "reviewed",
+      "paymentStatus": "winner_reports_accepted_subs",
+      "paymentCheckedAt": "2026-10-08",
+      "sourceType": "manual_vod_review",
+      "evidenceLinks": [],
+      "notes": "Streamlabs: @kraftmade has won a $10 Prize Money! Maintainer reports the winner accepted subscriptions instead of cash.",
+      "history": [
+        {"date": "2026-10-08", "event": "Recorded from Streamlabs raffle announcement on VOD 2892588578 at 04:36:00; maintainer reports winner took subs."}
+      ]
+    },
+    {
+      "id": "COB-004",
+      "winner": "killg0re_",
+      "winDate": "2026-09-25",
+      "dateNote": "Date taken from the maintainer’s 13-days-ago note on 8 Oct 2026.",
+      "prize": {"amount": 10, "currency": "USD", "kind": "Raffle"},
+      "vodId": "2883621765",
+      "timestampSeconds": 21355,
+      "announcementStatus": "reviewed",
+      "paymentStatus": "winner_reports_accepted_subs",
+      "paymentCheckedAt": "2026-10-08",
+      "sourceType": "manual_vod_review",
+      "evidenceLinks": [],
+      "notes": "Streamlabs: @killg0re_ has won a $10 Prize Money! Maintainer reports the winner accepted subscriptions instead of cash.",
+      "history": [
+        {"date": "2026-10-08", "event": "Recorded from Streamlabs raffle announcement on VOD 2883621765 at 05:55:55; maintainer reports winner took subs."}
+      ]
+    },
+    {
+      "id": "COB-005",
+      "winner": "murdochmystery",
+      "winDate": "2026-09-23",
+      "dateNote": "Date taken from the maintainer’s 15-days-ago note on 8 Oct 2026.",
+      "prize": {"amount": 10, "currency": "USD", "kind": "Raffle"},
+      "vodId": "2881916794",
+      "timestampSeconds": 18820,
+      "announcementStatus": "reviewed",
+      "paymentStatus": "unknown",
+      "paymentCheckedAt": null,
+      "sourceType": "manual_vod_review",
+      "evidenceLinks": [],
+      "notes": "Streamlabs: @murdochmystery has won a $10 Prize Money!",
+      "history": [
+        {"date": "2026-10-08", "event": "Recorded from Streamlabs raffle announcement on VOD 2881916794 at 05:13:40."}
+      ]
+    },
+    {
+      "id": "COB-006",
+      "winner": "ladybug08a",
+      "winDate": "2026-09-21",
+      "dateNote": "Date taken from the maintainer’s 17-days-ago note on 8 Oct 2026.",
+      "prize": {"amount": 10, "currency": "USD", "kind": "Raffle"},
+      "vodId": "2880204471",
+      "timestampSeconds": 15033,
+      "announcementStatus": "reviewed",
+      "paymentStatus": "unknown",
+      "paymentCheckedAt": null,
+      "sourceType": "manual_vod_review",
+      "evidenceLinks": [],
+      "notes": "Streamlabs: @ladybug08a has won a $10 Prize Money! Maintainer notes this as an example of a poorly announced winner.",
+      "history": [
+        {"date": "2026-10-08", "event": "Recorded from Streamlabs raffle announcement on VOD 2880204471 at 04:10:33."}
+      ]
+    },
+    {
+      "id": "COB-007",
+      "winner": "Wittifer",
+      "winDate": "2026-09-18",
+      "dateNote": "Date taken from the maintainer’s 20-days-ago note on 8 Oct 2026.",
+      "prize": {"amount": 10, "currency": "USD", "kind": "Raffle"},
+      "vodId": "2877451414",
+      "timestampSeconds": 19720,
+      "announcementStatus": "reviewed",
+      "paymentStatus": "unknown",
+      "paymentCheckedAt": null,
+      "sourceType": "manual_vod_review",
+      "evidenceLinks": [],
+      "notes": "Streamlabs: @Wittifer has won a $10 Prize Money!",
+      "history": [
+        {"date": "2026-10-08", "event": "Recorded from Streamlabs raffle announcement on VOD 2877451414 at 05:28:40."}
+      ]
+    },
+    {
+      "id": "COB-008",
+      "winner": "thatscottishguygeorge",
+      "winDate": "2026-09-16",
+      "dateNote": "Date taken from the maintainer’s 22-days-ago note on 8 Oct 2026.",
+      "prize": {"amount": 10, "currency": "USD", "kind": "Raffle"},
+      "vodId": "2875710924",
+      "timestampSeconds": 17925,
+      "announcementStatus": "reviewed",
+      "paymentStatus": "unknown",
+      "paymentCheckedAt": null,
+      "sourceType": "manual_vod_review",
+      "evidenceLinks": [],
+      "notes": "Streamlabs: @thatscottishguygeorge has won a $10 Prize Money!",
+      "history": [
+        {"date": "2026-10-08", "event": "Recorded from Streamlabs raffle announcement on VOD 2875710924 at 04:58:45."}
+      ]
+    },
+    {
+      "id": "COB-009",
+      "winner": "xostarlight",
+      "winDate": "2026-09-14",
+      "dateNote": "Date taken from the maintainer’s 24-days-ago note on 8 Oct 2026.",
+      "prize": {"amount": 10, "currency": "USD", "kind": "Raffle"},
+      "vodId": "2874004413",
+      "timestampSeconds": 18479,
+      "announcementStatus": "reviewed",
+      "paymentStatus": "winner_reports_accepted_subs",
+      "paymentCheckedAt": "2026-10-08",
+      "sourceType": "manual_vod_review",
+      "evidenceLinks": [],
+      "notes": "Streamlabs: @xostarlight has won a $10 Prize Money! Maintainer reports the winner opted to give subscriptions instead of taking cash.",
+      "history": [
+        {"date": "2026-10-08", "event": "Recorded from Streamlabs raffle announcement on VOD 2874004413 at 05:07:59; maintainer reports winner opted to give subs."}
+      ]
+    },
+    {
+      "id": "COB-010",
+      "winner": "worthygerbil",
+      "winDate": null,
+      "dateDisplay": "Last month",
+      "dateNote": "Maintainer reports this VOD is from last month; exact calendar date not yet confirmed. Streamlabs quote was not supplied with this record.",
+      "prize": {"amount": 10, "currency": "USD", "kind": "Raffle"},
+      "vodId": "2870401446",
+      "timestampSeconds": 19506,
+      "announcementStatus": "needs_review",
+      "paymentStatus": "unknown",
+      "paymentCheckedAt": null,
+      "sourceType": "manual_vod_review",
+      "evidenceLinks": [],
+      "notes": "Winner name and VOD timestamp supplied by the maintainer. Original Streamlabs line still needs to be attached.",
+      "history": [
+        {"date": "2026-10-08", "event": "Recorded from maintainer notes for VOD 2870401446 at 05:25:06; calendar date listed only as last month."}
+      ]
+    },
+    {
+      "id": "COB-011",
+      "winner": "MERU____12",
+      "winDate": null,
+      "dateDisplay": "Last month",
+      "dateNote": "Maintainer reports this VOD is from last month; exact calendar date not yet confirmed.",
+      "prize": {"amount": 10, "currency": "USD", "kind": "Raffle"},
+      "vodId": "2869558926",
+      "timestampSeconds": 17946,
+      "announcementStatus": "reviewed",
+      "paymentStatus": "unknown",
+      "paymentCheckedAt": null,
+      "sourceType": "manual_vod_review",
+      "evidenceLinks": [],
+      "notes": "Streamlabs: @MERU____12 has won a $10 Prize Money!",
+      "history": [
+        {"date": "2026-10-08", "event": "Recorded from Streamlabs raffle announcement on VOD 2869558926 at 04:59:06; calendar date listed only as last month."}
+      ]
+    },
+    {
+      "id": "COB-012",
+      "winner": "KorvinSilver",
+      "winDate": null,
+      "dateDisplay": "Last month",
+      "dateNote": "Maintainer reports this VOD is from last month; exact calendar date not yet confirmed.",
+      "prize": {"amount": 10, "currency": "USD", "kind": "Raffle"},
+      "vodId": "2868702731",
+      "timestampSeconds": 17670,
+      "announcementStatus": "reviewed",
+      "paymentStatus": "unknown",
+      "paymentCheckedAt": null,
+      "sourceType": "manual_vod_review",
+      "evidenceLinks": [],
+      "notes": "Streamlabs: @KorvinSilver has won a $10 Prize Money!",
+      "history": [
+        {"date": "2026-10-08", "event": "Recorded from Streamlabs raffle announcement on VOD 2868702731 at 04:54:30; calendar date listed only as last month."}
+      ]
+    },
+    {
+      "id": "COB-013",
+      "winner": "DJMasterProXDKun",
+      "winDate": null,
+      "dateDisplay": "Last month",
+      "dateNote": "Maintainer reports this VOD is from last month; exact calendar date not yet confirmed.",
+      "prize": {"amount": 10, "currency": "USD", "kind": "Raffle"},
+      "vodId": "2863312923",
+      "timestampSeconds": 17325,
+      "announcementStatus": "reviewed",
+      "paymentStatus": "unknown",
+      "paymentCheckedAt": null,
+      "sourceType": "manual_vod_review",
+      "evidenceLinks": [],
+      "notes": "Streamlabs: @DJMasterProXDKun has won a $10 Prize Money!",
+      "history": [
+        {"date": "2026-10-08", "event": "Recorded from Streamlabs raffle announcement on VOD 2863312923 at 04:48:45; calendar date listed only as last month."}
+      ]
+    },
+    {
+      "id": "COB-014",
+      "winner": "Raven_G17",
+      "winDate": null,
+      "dateDisplay": "Last month",
+      "dateNote": "Maintainer reports this VOD is from last month; exact calendar date not yet confirmed.",
+      "prize": {"amount": 10, "currency": "USD", "kind": "Raffle"},
+      "vodId": "2861582374",
+      "timestampSeconds": 18598,
+      "announcementStatus": "reviewed",
+      "paymentStatus": "unknown",
+      "paymentCheckedAt": null,
+      "sourceType": "manual_vod_review",
+      "evidenceLinks": [],
+      "notes": "Streamlabs: @Raven_G17 has won a $10 Prize Money!",
+      "history": [
+        {"date": "2026-10-08", "event": "Recorded from Streamlabs raffle announcement on VOD 2861582374 at 05:09:58; calendar date listed only as last month."}
       ]
     }
   ]

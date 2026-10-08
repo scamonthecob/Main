@@ -4,11 +4,12 @@
     unknown: ["Payment unknown", "badge-unknown"],
     winner_reports_unpaid: ["Winner reports unpaid", "badge-unpaid"],
     winner_reports_paid: ["Winner reports paid", "badge-paid"],
-    payment_evidence_reviewed: ["Payment evidence reviewed", "badge-reviewed"]
+    payment_evidence_reviewed: ["Payment evidence reviewed", "badge-reviewed"],
+    winner_reports_accepted_subs: ["Winner accepted subs instead", "badge-subs"]
   };
   const announcementLabels = {needs_review:"Announcement needs review", reviewed:"Announcement reviewed"};
-  function dateLabel(value) {
-    if (!value) return "Date unconfirmed";
+  function dateLabel(value, fallback) {
+    if (!value) return fallback || "Date unconfirmed";
     return new Intl.DateTimeFormat("en-GB", {day:"numeric",month:"short",year:"numeric",timeZone:"UTC"}).format(new Date(value + "T00:00:00Z"));
   }
   function stamp(seconds) {
@@ -37,7 +38,7 @@
   records.forEach(record => {
     const row = make("tr"); row.id = record.id;
     const name = make("th",record.winner);name.scope="row";name.append(make("small",record.id));
-    const date = make("td", dateLabel(record.winDate));
+    const date = make("td", dateLabel(record.winDate, record.dateDisplay));
     if (record.dateNote) date.title = record.dateNote;
     const hasCashValue = typeof record.prize.amount === "number" && Boolean(record.prize.currency);
     const prizeText = hasCashValue
@@ -73,5 +74,5 @@
   document.querySelector("#count-reviewed").textContent=records.filter(r=>r.announcementStatus==="reviewed").length;
   document.querySelector("#count-paid").textContent=records.filter(r=>["winner_reports_paid","payment_evidence_reviewed"].includes(r.paymentStatus)).length;
   const updated=document.querySelector("#updated");updated.textContent=dateLabel(dataset.updatedAt);updated.dateTime=dataset.updatedAt;
-  document.querySelector("#data-message").textContent=records.length + " winner " + (records.length===1?"record is":"records are") + " listed. Earlier winners still need to be added; this is not yet a complete archive.";
+  document.querySelector("#data-message").textContent=records.length + " raffle " + (records.length===1?"record is":"records are") + " listed. Race winners, Fall Bash prizes and the 6 Years Celebration VOD still need to be added; this is not yet a complete archive.";
 })();

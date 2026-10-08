@@ -5,7 +5,7 @@ from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-PAYMENT = {"unknown", "winner_reports_unpaid", "winner_reports_paid", "payment_evidence_reviewed"}
+PAYMENT = {"unknown", "winner_reports_unpaid", "winner_reports_paid", "payment_evidence_reviewed", "winner_reports_accepted_subs"}
 
 def check_date(value, allow_null=False):
     if value is None and allow_null:
@@ -24,6 +24,8 @@ def build():
         ids.add(r["id"])
         assert isinstance(r["winner"], str) and re.fullmatch(r"[A-Za-z0-9_]{1,25}", r["winner"]), "Use a public Twitch username"
         check_date(r["winDate"], allow_null=True)
+        if "dateDisplay" in r:
+            assert isinstance(r["dateDisplay"], str) and r["dateDisplay"], "dateDisplay must be text when present"
         check_date(r["paymentCheckedAt"], allow_null=True)
         assert r["paymentStatus"] in PAYMENT, "Invalid payment status"
         assert r["announcementStatus"] in {"needs_review", "reviewed"}, "Invalid announcement status"
