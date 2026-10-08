@@ -1,0 +1,8 @@
+.env
+.env.*
+!.env.example
+private/
+raw-chat/
+*.docx
+__pycache__/
+node_modules/
