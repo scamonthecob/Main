@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-10-08",
+  "records": [
+    {
+      "id": "COB-001",
+      "winner": "ImJaoBao",
+      "winDate": null,
+      "dateNote": "Exact calendar date of the raffle is unconfirmed.",
+      "prize": {"amount": 10, "currency": "USD", "kind": "Raffle"},
+      "vodId": "2889810819",
+      "timestampSeconds": 16723,
+      "announcementStatus": "needs_review",
+      "paymentStatus": "winner_reports_unpaid",
+      "paymentCheckedAt": "2026-10-08",
+      "sourceType": "claimant_report",
+      "evidenceLinks": [],
+      "notes": "Winner supplied the VOD and timestamp. Original screenshots and a review of the announcement are still needed. Earlier prizes were paid; only this $10 is reported outstanding. The final supplied message excludes the viewer from the community but does not explicitly cancel this payment.",
+      "history": [
+        {"date": "2026-10-08", "event": "Record created from the claimant's account; claimant reports payment remains outstanding."}
+      ]
+    }
+  ]
+}
