@@ -29,8 +29,11 @@ def build():
         assert r["announcementStatus"] in {"needs_review", "reviewed"}, "Invalid announcement status"
         assert r["sourceType"] in {"claimant_report", "manual_vod_review", "reviewed_chat_detection"}, "Invalid source type"
         amount = r["prize"]["amount"]
-        assert isinstance(amount, (float, int)) and not isinstance(amount, bool) and 0 <= amount < 1e9, "Invalid prize amount"
-        assert r["prize"]["currency"] in {"USD"}, "Add supported currencies deliberately"
+        assert amount is None or (isinstance(amount, (float, int)) and not isinstance(amount, bool) and 0 <= amount < 1e9), "Invalid prize amount"
+        assert r["prize"]["currency"] in {"USD", None}, "Add supported currencies deliberately"
+        assert (amount is None) == (r["prize"]["currency"] is None), "Use null for both amount and currency when no cash value is known"
+        if "description" in r["prize"]:
+            assert isinstance(r["prize"]["description"], str), "Prize description must be text"
         assert isinstance(r["prize"]["kind"], str) and r["prize"]["kind"], "Prize kind is required"
         assert r["vodId"] is None or re.fullmatch(r"\d+", r["vodId"]), "Invalid VOD ID"
         seconds = r["timestampSeconds"]

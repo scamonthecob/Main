@@ -39,8 +39,12 @@
     const name = make("th",record.winner);name.scope="row";name.append(make("small",record.id));
     const date = make("td", dateLabel(record.winDate));
     if (record.dateNote) date.title = record.dateNote;
-    const prize = make("td",new Intl.NumberFormat("en-US",{style:"currency",currency:record.prize.currency,maximumFractionDigits:2}).format(record.prize.amount) + " " + record.prize.currency);
-    prize.append(make("small",record.prize.kind));
+    const hasCashValue = typeof record.prize.amount === "number" && Boolean(record.prize.currency);
+    const prizeText = hasCashValue
+      ? new Intl.NumberFormat("en-US",{style:"currency",currency:record.prize.currency,maximumFractionDigits:2}).format(record.prize.amount) + " " + record.prize.currency
+      : record.prize.description || record.prize.kind;
+    const prize = make("td",prizeText);
+    if (hasCashValue || prizeText !== record.prize.kind) prize.append(make("small",record.prize.kind));
     const payment = make("td"); const status = labels[record.paymentStatus] || labels.unknown;
     payment.append(make("span",status[0],"badge " + status[1]));
     if (record.paymentCheckedAt) payment.append(make("small","Checked " + dateLabel(record.paymentCheckedAt)));
@@ -67,7 +71,7 @@
   }
   document.querySelector("#count-records").textContent=records.length;
   document.querySelector("#count-reviewed").textContent=records.filter(r=>r.announcementStatus==="reviewed").length;
-  document.querySelector("#count-unpaid").textContent=records.filter(r=>r.paymentStatus==="winner_reports_unpaid").length;
+  document.querySelector("#count-paid").textContent=records.filter(r=>["winner_reports_paid","payment_evidence_reviewed"].includes(r.paymentStatus)).length;
   const updated=document.querySelector("#updated");updated.textContent=dateLabel(dataset.updatedAt);updated.dateTime=dataset.updatedAt;
-  document.querySelector("#data-message").textContent=records.length + " reported " + (records.length===1?"case is":"cases are") + " listed. This is not a complete history of the channel’s winners.";
+  document.querySelector("#data-message").textContent=records.length + " winner " + (records.length===1?"record is":"records are") + " listed. Earlier winners still need to be added; this is not yet a complete archive.";
 })();
